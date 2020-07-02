@@ -280,19 +280,13 @@ header {
         transition: 1.5s ease;
       }
       .card-group .card:hover .card-body {
-        height: 80%;
+        height: 63%;
       }
       .card-group .card:hover .card-content {
         bottom: 0;
       }
 
 }
-
-
-  /* body {
-    margin: 0;
-    background-image: linear-gradient(to right, #ece9e6, #ffffff);
-  } */
 
 /* About Section */
 
@@ -485,7 +479,6 @@ header {
 .about-heading p {
     text-align: justify;
     text-justify: inter-word;
-    padding: 0 2rem;
 } 
 
 .about-card {
