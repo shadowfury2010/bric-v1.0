@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Reset  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Header */
+
+header {
+    background: url(../images/banner7-edited.jpg) center center/cover no-repeat;
+    height: 75vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+.banner .contact-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner .contact-details .contact-details-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.contact-address p {
+    margin:0;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navigation {
+    background-color: #000;
+    color: #fff;
+    padding: 0 30px;
+    transition: 0.75s;
+}
+
+
+/* Navigation  */
+
+.nav-item {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #e6945c 2px solid;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+.navbar-brand:hover{
+    border-bottom: #e6945c 2px solid;
+    cursor: pointer;
+}
+
+.banner .content h1 {
+    font-size: 5rem;
+}
+
+.banner .content p {
+    font-size: 2.5rem;
+    max-width: 800px;
+    margin: 20px 0 30px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    color: #b8b6b6;
+}
+
+.contact-details-items {
+    display: flex;
+}
+
+.contact-details-items li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.contact-details-items li a {
+    color: #b8b6b6;
+}
+
+.contact-address p {
+    margin:0;
+}
+
+.contact-address p i {
+    color: #e6945c;
+}
+
+/* Contact us */
+
+/* Contact Us */
+.email-map {
+    padding: 20px;
+ }
+ .address-heading {
+     text-align: center;
+ }
+
+ .middle-container .email-map {
+    background-image: url(../Images/contact3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+ }
+ .address-heading {
+     text-align: center;
+ }
+
+ .address-heading h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+ }
+
+ .contact-details-map .headquarter,
+ .contact-details-map .ring-fax,
+ .contact-details-map .email {
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+ }
+
+ .contact-details-map li {
+     color: white;
+     background-color: black;
+ }
+
+ .middle-container .message-row {
+     margin-top: 20px;
+ }
+
+ .middle-container .Address-map-address .btn {
+     background-color: #142d1f;
+     color: #fff;
+ }
+
+ .middle-container .Address-map-address .btn:hover:hover {
+      background-color: #28a745;
+  }
+ iframe {
+     width: 100%;
+     height: 515px;
+ }
+
+ .card {
+     margin: 10px 10px;
+ }
+
+ .card:hover {
+     -webkit-box-shadow: -1px 9px 40px -12px rgb(0,0,0,0.75);
+     -moz-box-shadow: -1px 9px 40px -12px rgb(0,0,0,0.75);
+     box-shadow: -1px 9px 40px -12px rgb(0,0,0,0.75);
+ }
+
+ iframe:hover {
+    -webkit-box-shadow: -1px 9px 40px -12px rgb(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgb(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgb(0,0,0,0.75);
+}
+
+.Address-map {
+    display: flex;
+    margin: 1rem 4rem;
+}
+
+.Address-map .contact-details-map {
+    flex: 1;
+}
+
+.Address-map .contact-map {
+    flex: 3;
+    margin: auto;
+}
+
+.Address-map .contact-map .googleMap {
+    margin: 3rem auto 0 auto;
+}
+
+.Address-map .contact-map .googleMap .map-container-5 {
+    width: 100%;
+}
+
+/* Footer */
+
+.end-footer {
+    background: url(../images/contact6.jpg) center center/cover no-repeat;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-heading h3 {
+    font-size: 3.5rem;
+    margin: 2rem auto;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+    padding: 2rem;
+}
+
+.footer-heading ul {
+    justify-content: center;
+}
+
+.footer-heading ul li a {
+    color: #fff;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-cont .footer-heading p,
+.footer-cont .contact-address p{
+    color: #fff;
+}
+
+.footer-contact .contact-phone li a {
+    color: #fff;
+}
+
+.contact-details-items-menu {
+    flex-direction: column;
+    list-style: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+/* Smartphones */
+
+@media(max-width: 500px) {
+
+    header {
+        height: 100vh;
+    }
+
+    .banner .content h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .banner .content p {
+        font-size: inherit;
+    }
+    
+    .banner .content a {
+        font-size: small;
+    }
+    
+    .section-heading h2 {
+        font-size: xx-large;
+    }
+    
+    .address-heading h1 {
+    font-size: xx-large;
+    }
+
+    .card {
+        margin: 0 auto 2rem;
+        max-width: 80%;
+    }
+    
+    .about-heading p {
+        text-align: justify;
+        text-justify: inter-word;
+    } 
+    
+    .about-card {
+        flex-direction: column;
+    }
+    
+    .carousel-inner img {
+        border-radius: 50%;
+        width: 50%;
+    }
+
+    .Address-map {
+        flex-direction: column;
+        margin: inherit;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+    }
+    
+    .footer-contact .contact-address,
+    .footer-contact .contact-phone {
+        margin: auto;
+    }
+    
+    .footer-heading {
+        display: none;
+    }
+    
+    .copyright {
+        margin-top: 1.5rem;
+    }
+
+    .footer-cont {
+        padding-top: 2.5rem;
+    }
+
+    }

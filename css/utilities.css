@@ -1,0 +1,20 @@
+/* Button */
+
+.btn {
+    cursor: pointer;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: coral;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.card-center {
+    display: flex; justify-content: center;
+}
+
+.mar-2-tnb {
+    margin: 2rem 0;
+}

@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Reset  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    background: url(../images/wall9-edited.jpg) center center/cover no-repeat;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Header */
+
+header {
+    background: url(../images/banner7-edited.jpg) center center/cover no-repeat;
+    height: 75vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+.banner .contact-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner .contact-details .contact-details-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.contact-address p {
+    margin:0;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navigation {
+    background-color: #000;
+    color: #fff;
+    padding: 0 30px;
+    transition: 0.75s;
+}
+
+
+/* Navigation  */
+
+
+.nav-item {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #e6945c 2px solid;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+.navbar-brand:hover{
+    border-bottom: #e6945c 2px solid;
+    cursor: pointer;
+}
+
+.banner .content h1 {
+    font-size: 5rem;
+}
+
+.banner .content p {
+    font-size: 2.5rem;
+    max-width: 800px;
+    margin: 20px 0 30px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    color: #b8b6b6;
+}
+
+.contact-details-items {
+    display: flex;
+}
+
+.contact-details-items li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.contact-details-items li a {
+    color: #b8b6b6;
+}
+
+.contact-address p {
+    margin:0;
+}
+
+.contact-address p i {
+    color: #e6945c;
+}
+
+/* Products  */
+
+.product {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+
+.card-group {
+    justify-content: center;
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    max-width: 25%;
+    margin: 0 1rem;
+}
+
+.product .card-deck .card .card-body a {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.product .card-deck .card .card-body {
+    text-align: center;
+}
+
+.product .card-deck .card .card-body h4 {
+    margin-bottom: 1rem;
+}
+
+.product .card-deck .card .card-body p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* migrated card */
+
+@media(min-width: 500px) {
+
+    .card-group .card-wrapper {
+        margin-bottom: 30px;
+      }
+      .card-group .card-image .card .card-img-wrapper {
+        height: 100%;
+      }
+      .card-group .card-image .card .card-body {
+        display: none;
+      }
+      .card-group .card-image-title-description .card .card-img-wrapper {
+        max-height: 160px;
+      }
+      .card-group .card-image-title-description .card {
+        position: relative;
+        min-height: 300px;
+      }
+      .card-group .card-image-title-description .card .card-body {
+        height: auto;
+        position: relative;
+        top: 0;
+        margin-bottom: -70px;
+      }
+      .card-group .card-image-title-description .card:hover .card-body {
+        top: -70px;
+      }
+      .card-group .card-image-title-description .card .card-body .card-title {
+        margin-bottom: 0.75rem;
+      }
+      .card-group .card {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        min-height: 400px;
+        height: 100%;
+      }
+      .card-group .card:hover {
+        box-shadow: 8px 12px 31px -10px #ab98ab;
+      }
+      .card-group .card-img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        overflow: hidden;
+      }
+      .card-group .card-img-wrapper img {
+        transition: 1.5s ease;
+      }
+      .card-group .card:hover .card-img-wrapper img {
+        transform: scale(1.15);
+      }
+      .card-group .card-body .card-title {
+        margin-bottom: calc(50% + 20px);
+        transition: 1.5s ease;
+      }
+      .card-group .card:hover .card-body .card-title {
+        margin-bottom: 0.75rem;
+      }
+      
+      .card-group .card-body {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background-color: #fff;
+        transition: 1.5s ease;
+      }
+      .card-group .card-content {
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        transition: 1.5s ease;
+      }
+      .card-group .card:hover .card-body {
+        height: 80%;
+      }
+      .card-group .card:hover .card-content {
+        bottom: 0;
+      }
+
+}
+
+
+
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.section-heading h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+
+/* Leader Cards */
+
+.leaders .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* About Section */
+
+.about-us {
+    background: url(../images/banner2.jpg) center center/cover no-repeat;
+    position: relative;
+}
+
+.about-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.about-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+}
+
+.about-heading h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.about-heading p,
+.about-heading h2,
+.about-heading a
+{
+    z-index: 10;
+    color: #fff;
+}
+
+.about-heading p {
+    padding: 2rem;
+}
+
+.about-heading a {
+    margin-bottom: 2rem;
+}
+
+
+/* Footer */
+
+.end-footer {
+    background: url(../images/contact6.jpg) center center/cover no-repeat;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-heading h3 {
+    font-size: 3.5rem;
+    margin: 2rem auto;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+    padding: 2rem;
+}
+
+.footer-heading ul {
+    justify-content: center;
+}
+
+.footer-heading ul li a {
+    color: #fff;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-cont .footer-heading p,
+.footer-cont .contact-address p{
+    color: #fff;
+}
+
+.footer-contact .contact-phone li a {
+    color: #fff;
+}
+
+.contact-details-items-menu {
+    flex-direction: column;
+    list-style: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+/* Smartphones */
+
+@media(max-width: 500px) {
+
+    header {
+        height: 100vh;
+    }
+
+    .banner .content h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .banner .content p {
+        font-size: inherit;
+    }
+    
+    .banner .content a {
+        font-size: small;
+    }
+    
+    .section-heading h2 {
+        font-size: xx-large;
+    }
+    
+    .card {
+        margin: 0 auto 2rem;
+        max-width: 80%;
+    }
+    
+    .about-heading p {
+        text-align: justify;
+        text-justify: inter-word;
+    } 
+
+    .product-items {
+        flex-direction: column;
+    }
+    
+    .footer-contact {
+        flex-direction: column;
+    }
+    
+    .footer-contact .contact-address,
+    .footer-contact .contact-phone {
+        margin: auto;
+    }
+
+    .footer-heading {
+        display: none;
+    }
+    
+    .copyright {
+        margin-top: 1.5rem;
+    }
+
+    .footer-cont {
+        padding-top: 2.5rem;
+    }
+    
+    }
