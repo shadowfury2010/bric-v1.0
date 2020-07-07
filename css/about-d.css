@@ -103,13 +103,15 @@ header {
     margin: 0 5px;
 }
 
-.navbar a:hover {
+.navbar-nav a:hover {
     border-bottom: #e6945c 2px solid;
     cursor: pointer;
 }
 
 .navbar-brand {
-    font-weight: 500;
+    margin: 0.2rem 0 0;
+    padding: 0;
+    width: 4%;
 }
 
 .navbar-brand:hover{
@@ -194,18 +196,30 @@ header {
 /* About Section */
 
 .about-us {
-    background: url(../images/banner2.jpg) center center/cover no-repeat;
+    background: url(../images/banner2-edit1.jpg) center center/cover no-repeat;
     position: relative;
+    height: 35vh;
+    overflow-y: scroll;
 }
 
-.about-us::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left:0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+.about-us::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.about-us::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.about-us::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }
 
 .about-heading {
@@ -298,6 +312,10 @@ header {
 /* Smartphones */
 
 @media(max-width: 500px) {
+
+    .navbar-brand {
+        width: 16%;
+    }
 
     header {
         height: 100vh;

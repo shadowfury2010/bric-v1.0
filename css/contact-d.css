@@ -103,7 +103,9 @@ header {
 }
 
 .navbar-brand {
-    font-weight: 500;
+    margin: 0.2rem 0 0;
+    padding: 0;
+    width: 4%;
 }
 
 .navbar-brand:hover{
@@ -304,6 +306,10 @@ header {
 /* Smartphones */
 
 @media(max-width: 500px) {
+
+    .navbar-brand {
+        width: 16%;
+    }
 
     header {
         height: 100vh;

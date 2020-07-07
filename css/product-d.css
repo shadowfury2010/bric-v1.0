@@ -99,13 +99,15 @@ header {
     margin: 0 5px;
 }
 
-.navbar a:hover {
+.navbar-nav a:hover {
     border-bottom: #e6945c 2px solid;
     cursor: pointer;
 }
 
 .navbar-brand {
-    font-weight: 500;
+    margin: 0.2rem 0 0;
+    padding: 0;
+    width: 4%;
 }
 
 .navbar-brand:hover{
@@ -272,10 +274,14 @@ header {
         transition: 1.5s ease;
       }
       .card-group .card:hover .card-body {
-        height: 63%;
+        height: 73%;
       }
       .card-group .card:hover .card-content {
         bottom: 0;
+      }
+
+      .service-card .card:hover .card-body {
+        height: 65%;
       }
 
 }
@@ -413,6 +419,10 @@ header {
 /* Smartphones */
 
 @media(max-width: 500px) {
+
+    .navbar-brand {
+        width: 16%;
+    }
 
     header {
         height: 100vh;
